@@ -1,3 +1,3 @@
 # PHASE
-PHenotype prediction with Attention mechanisms for Single-cell Exploring
+PHenotype prediction with Attention mechanisms for Single-cell Exploring.
 Under update...
