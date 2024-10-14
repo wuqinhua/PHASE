@@ -4,5 +4,5 @@ PHASE utilizes an attention-based neural network framework to predict clinical p
 
 ***
 
-<img src="https://github.com/wuqinhua/PHASE/blob/main/Overview%20of%20PHASE.png" alt="架构图" width="600"/>
+<img src="https://github.com/wuqinhua/PHASE/blob/main/Overview%20of%20PHASE.png" alt="架构图" width="800"/>
 
