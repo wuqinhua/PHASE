@@ -16,7 +16,7 @@ The manuscript has been published in bioRxiv:
 
 ***
 
-# The PHASE pipeline
+## The PHASE pipeline
 
 1. **Predict clinical phenotypes from scRNA-seq data**
    - 1.1 Data preprocessing: Encode the data into a format that can be read by PHASE.
@@ -30,5 +30,25 @@ The manuscript has been published in bioRxiv:
    - 2.3 Conjoint analysis: Correlate top genes' expression levels with cells' attention scores to reveal gene-cell contributions to the phenotype.
      
 ***
+
+## Usages
+
+- **Data Preprocessing**: The folder contains preprocessing scripts and notebooks, including single-cell integration and annotation, available [here](https://github.com/wuqinhua/PHASE/tree/main/data_preprocessing).
+
+- **Model Training**: Details of model training can be found in the [COVID-19 Model Training](https://github.com/wuqinhua/PHASE/blob/main/COVID19/2_Model/2.1.2_Model_Training.py) and [Age Model Training](https://github.com/wuqinhua/PHASE/blob/main/Age/2_Model/2.3_Model_training.py) scripts.
+
+- **Attribution Analysis**: 
+  - For COVID-19 data, gene attribution scores can be computed using [COVID-19 Attribution Group PHASE](https://github.com/wuqinhua/PHASE/blob/main/COVID19/2_Model/2.2.1_attribution_group_PHASE.py) and [COVID-19 Attribution Sample PHASE](https://github.com/wuqinhua/PHASE/blob/main/COVID19/2_Model/2.2.2_attribution_sample_PHASE.py). Visualization of results is available in the [COVID-19 Attribution Analysis Notebook](https://github.com/wuqinhua/PHASE/blob/main/COVID19/3_Analysis/3.1_Attribution_analysis.ipynb).
+  - For Age data, gene attribution scores can be computed using [Age Attribution PHASE](https://github.com/wuqinhua/PHASE/blob/main/Age/2_Model/2.4_Attribution_PHASE.py), and result visualization is available in the [Age Attribution Analysis Notebook](https://github.com/wuqinhua/PHASE/blob/main/Age/3_Analysis/3.2_Attention_analysis.ipynb).
+
+- **Attention Analysis**: 
+  - For COVID-19 data, cell attention scores can be computed using [COVID-19 Attention PHASE](https://github.com/wuqinhua/PHASE/blob/main/COVID19/2_Model/2.3_attention_cell_PHASE.py), and result visualization is available in the [COVID-19 Attention Analysis Notebook](https://github.com/wuqinhua/PHASE/blob/main/COVID19/3_Analysis/3.2_Attention_analysis.ipynb).
+  - For Age data, cell attention scores can be computed using [Age Attention PHASE](https://github.com/wuqinhua/PHASE/blob/main/Age/2_Model/2.5_Attention_PHASE.py), and result visualization is available in the [Age Attention Analysis Notebook](https://github.com/wuqinhua/PHASE/blob/main/Age/3_Analysis/3.2_Attention_analysis.ipynb).
+
+- **Conjoint Analysis**: Details are available in the [COVID-19 Conjoint Analysis Notebook](https://github.com/wuqinhua/PHASE/blob/main/COVID19/3_Analysis/3.3_Conjoint_analysis.ipynb) and the [Age Conjoint Analysis Notebook](https://github.com/wuqinhua/PHASE/blob/main/Age/3_Analysis/3.3_Conjoint_analysis.ipynb).
+
+
+
+
 
 This repository will be continuously updated during the submission process.
