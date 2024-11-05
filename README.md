@@ -6,11 +6,11 @@
 - A self-attention (SA) module for cell embedding learning
 - An attention-based deep multiple instance learning (AMIL) module for aggregating all single-cell information within a sample
 
-The manuscript has been published in bioRxiv:
 
-**Exploring phenotype-related single cells through attention-enhanced representation learning**  
-Qinhua Wu, Junxiang Ding, Ruikun He, Lijian Hui, Junwei Liu, Yixue Li  
-*bioRxiv*, 2024, doi: [10.1101/2024.10.31.619327](https://doi.org/10.1101/2024.10.31.619327)
+The manuscript has been published in bioRxiv:
+> Wu, Q., Ding, J., He, R., Hui, L., Liu, J., & Li, Y.  
+> Exploring phenotype-related single cells through attention-enhanced representation learning.  
+> *bioRxiv* (2024). [https://doi.org/10.1101/2024.10.31.619327](https://doi.org/10.1101/2024.10.31.619327)
 
 ***
 
