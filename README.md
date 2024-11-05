@@ -33,7 +33,7 @@ The manuscript has been published in bioRxiv:
 
 ## Usages
 
-- **Data Preprocessing**: The folder contains preprocessing scripts and notebooks, including single-cell integration and annotation, available here [COVID-19](https://github.com/wuqinhua/PHASE/tree/main/COVID19/1_Data_preprocess) and [Age](https://github.com/wuqinhua/PHASE/tree/main/Age/1_Data_preprocess).
+- **Data Preprocessing**: The folder contains preprocessing scripts and notebooks, including single-cell integration and annotation, available for both [COVID-19](https://github.com/wuqinhua/PHASE/tree/main/COVID19/1_Data_preprocess) and [Age](https://github.com/wuqinhua/PHASE/tree/main/Age/1_Data_preprocess) datasets.
 
 - **Model Training**: Details of model training can be found in the [COVID-19 Model Training](https://github.com/wuqinhua/PHASE/blob/main/COVID19/2_Model/2.1.2_Model_Training.py) and [Age Model Training](https://github.com/wuqinhua/PHASE/blob/main/Age/2_Model/2.3_Model_training.py) scripts.
 
