@@ -17,4 +17,19 @@ The manuscript has been published in bioRxiv:
 
 ***
 
+# The PHASE pipeline
+
+```plaintext
+1. Predict clinical phenotypes from scRNA-seq data.
+   1.1 Data preprocessing: Encode the data into a format that can be read by PHASE.
+   1.2 Gene feature embedding: Extract and represent gene features.
+   1.3 Self-attention (SA): Learn cell embeddings.
+   1.4 Attention-based deep multiple instance learning (AMIL): Aggregate all single-cell information within a sample.
+   
+2. Provide interpretability of key phenotype-related features.
+   2.1 Attribution analysis: Use Integrated Gradients (IG) to link genes to phenotypes via attribution scores.
+   2.2 Attention analysis: Use AMIL attention scores to relate individual cells to the phenotype.
+   2.3 Conjoint analysis: Correlate top genes' expression levels with cells' attention scores to reveal gene-cell contributions to the phenotype.
+
+***
 This repository will be continuously updated during the submission process.
