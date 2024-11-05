@@ -22,7 +22,7 @@ The manuscript has been pre-printed in bioRxiv:
    - 1.1 Data preprocessing: Encode the data into a format that can be read by PHASE.
    - 1.2 Gene feature embedding: Extract and represent gene features.
    - 1.3 Self-attention (SA): Learn cell embeddings.
-   - 1.4 Attention-based deep multiple instance learning (AMIL): all single-cell information within a sample.
+   - 1.4 Attention-based deep multiple instance learning (AMIL): aggregate all single-cell information within a sample.
    
 2. **Provide interpretability of key phenotype-related features**
    - 2.1 Attribution analysis: Use Integrated Gradients (IG) to link genes to phenotypes via attribution scores.
