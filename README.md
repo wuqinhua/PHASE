@@ -7,7 +7,7 @@
 - An attention-based deep multiple instance learning (AMIL) module for aggregating all single-cell information within a sample
 
 
-The manuscript has been published in bioRxiv:
+The manuscript has been previewed in bioRxiv:
 > Qinhua Wu, Junxiang Ding, Ruikun He, Lijian Hui, Junwei Liu, Yixue Li. Exploring phenotype-related single-cells through attention-enhanced representation learning. *bioRxiv* (2024). [https://doi.org/10.1101/2024.10.31.619327](https://doi.org/10.1101/2024.10.31.619327)
 
 # 
