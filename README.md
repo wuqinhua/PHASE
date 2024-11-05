@@ -11,8 +11,6 @@ The manuscript has been published in bioRxiv:
 > Qinhua Wu, Junxiang Ding, Ruikun He, Lijian Hui, Junwei Liu, Yixue Li. Exploring phenotype-related single-cells through attention-enhanced representation learning. *bioRxiv* (2024). [https://doi.org/10.1101/2024.10.31.619327](https://doi.org/10.1101/2024.10.31.619327)
 
 
-***
-
 <img src="https://github.com/wuqinhua/PHASE/blob/main/The%20framework%20of%20PHASE.png" alt="架构图" width="800"/>
 
 ***
@@ -29,5 +27,7 @@ The manuscript has been published in bioRxiv:
    - **2.1 Attribution analysis**: Use Integrated Gradients (IG) to link genes to phenotypes via attribution scores.
    - **2.2 Attention analysis**: Use AMIL attention scores to relate individual cells to the phenotype.
    - **2.3 Conjoint analysis**: Correlate top genes' expression levels with cells' attention scores to reveal gene-cell contributions to the phenotype.
+     
 ***
+
 This repository will be continuously updated during the submission process.
