@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: phase-sc
+Version: 2.0.2
+Summary: PHASE:PHenotype prediction with Attention mechanisms for Single-cell Exploring
+Home-page: https://github.com/wuqinhua/PHASE.git
+Author: Qinhua Wu
+Author-email: wuqinhua21@mails.ucas.ac.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PHASE: PHenotype prediction with Attention mechanisms for Single-cell Exploring
+
+**PHASE** utilizes an attention-based neural network framework to predict clinical phenotypes from scRNA-seq data while providing interpretability of key features linked to phenotypic outcomes at both the gene and cell levels. PHASE consists of several components:
+- A data-preprocessing procedure
+- A gene feature embedding module
+- A self-attention (SA) module for cell embedding learning
+- An attention-based deep multiple instance learning (AMIL) module for aggregating all single-cell information within a sample
+
+
+The manuscript has been pre-printed in bioRxiv:
+> Qinhua Wu, Junxiang Ding, Ruikun He, Lijian Hui, Junwei Liu, Yixue Li. Exploring phenotype-related single-cells through attention-enhanced representation learning. *bioRxiv* (2024). [https://doi.org/10.1101/2024.10.31.619327](https://doi.org/10.1101/2024.10.31.619327)
+
+
+***
+
+## Installation
+### Installing PHASE package
+PHASE is written in Python and can be installed using pip:
+
+```bash
+pip install phase-sc
+```
+### Requirements
+PHASE should run on any environmnet where Python is available，utilizing PyTorch for its computational needs. The training of PHASE can be done using CPUs only or GPU acceleration. If you do not have powerful GPUs available, it is possible to run using only CPUs.
+
+***
+
+## The PHASE pipeline
+
+1. **Predict clinical phenotypes from scRNA-seq data**
+   - 1.1 Data preprocessing: Encode the data into a format that can be read by PHASE.
+   - 1.2 Gene feature embedding: Extract and represent gene features.
+   - 1.3 Self-attention (SA): Learn cell embeddings.
+   - 1.4 Attention-based deep multiple instance learning (AMIL): aggregate all single-cell information within a sample.
+   
+2. **Provide interpretability of key phenotype-related features**
+   - 2.1 Attribution analysis: Use Integrated Gradients (IG) to link genes to phenotypes via attribution scores.
+   - 2.2 Attention analysis: Use AMIL attention scores to relate individual cells to the phenotype.
+   - 2.3 Conjoint analysis: Correlate top genes' expression levels with cells' attention scores to reveal gene-cell contributions to the phenotype.
+     
+***
+
+## Usages
+
+### Command Line Arguments
+
+The following table lists the command line arguments available for training the model:
+
+| Abbreviation | Parameter      | Description                                                       |
+|--------------|----------------|-------------------------------------------------------------------|
+| -t           | --type         | Type of task: classification or regression.                       |
+| -p           | --path         | Path to the dataset.                                              |
+| -r           | --result       | Path to the directory where results will be saved.                |
+| -e           | --epoch        | Number of training epochs (default: 100).                         |
+| -l           | --learningrate | Learning rate for the optimizer (default: 0.00001).               |
+| -d           | --devices      | List of GPU device IDs to use for training (default: first GPU).  |
+
+Each argument is required unless a default value is specified.
+
+

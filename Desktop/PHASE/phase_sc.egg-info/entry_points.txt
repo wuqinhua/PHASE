@@ -1,0 +1,2 @@
+[console_scripts]
+PHASEtrain = PHASE.main:main
