@@ -18,13 +18,36 @@ The manuscript has been pre-printed in bioRxiv:
 
 ## Installation
 ### Installing PHASE package
-PHASE is written in Python and can be installed using pip:
+PHASE is written in Python and can be installed using `pip`:
 
 ```bash
 pip install phase-sc
 ```
 ### Requirements
-PHASE should run on any environmnet where Python is available，utilizing PyTorch for its computational needs. The training of PHASE can be done using CPUs only or GPU acceleration. If you do not have powerful GPUs available, it is possible to run using only CPUs.
+PHASE should run on any environmnet where Python is available，utilizing PyTorch for its computational needs. The training of PHASE can be done using CPUs only or GPU acceleration. If you do not have powerful GPUs available, it is possible to run using only CPUs. Before using **PHASE**, make sure the following packages are installed:
+
+```bash
+scanpy>=1.10.2  
+anndata>=0.10.8  
+torch>=2.4.0  
+tqdm>=4.66.4  
+numpy>=1.23.5  
+pandas>=1.5.3  
+scipy>=1.11.4  
+seaborn>=0.13.2  
+matplotlib==3.6.3  
+captum==0.7.0  
+scikit-learn>=1.5.1  
+```
+To install these dependencies, you can run the following command using `pip`:
+```bash
+pip install scanpy>=1.10.2 anndata>=0.10.8 torch>=2.4.0 tqdm>=4.66.4 numpy>=1.23.5 pandas>=1.5.3 scipy>=1.11.4 seaborn>=0.13.2 matplotlib==3.6.3 captum==0.7.0 scikit-learn>=1.5.1
+```
+
+Alternatively, if you are using a requirements.txt file, you can add these lines to your file and install using:
+```bash
+pip install -r requirements.txt
+```
 
 ***
 
