@@ -45,6 +45,21 @@ PHASE should run on any environmnet where Python is available，utilizing PyTorc
 
 ## Usages
 
+### Command Line Arguments
+
+The following table lists the command line arguments available for training the model:
+
+| Abbreviation | Parameter      | Description                                                       |
+|--------------|----------------|-------------------------------------------------------------------|
+| -t           | --type         | Type of task: classification or regression.                       |
+| -p           | --path         | Path to the dataset.                                              |
+| -r           | --result       | Path to the directory where results will be saved.                |
+| -e           | --epoch        | Number of training epochs (default: 100).                         |
+| -l           | --learningrate | Learning rate for the optimizer (default: 0.00001).               |
+| -d           | --devices      | List of GPU device IDs to use for training (default: first GPU).  |
+
+Each argument is required unless a default value is specified.
+
 ***
 
 ## Reproduction
