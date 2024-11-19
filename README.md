@@ -60,6 +60,11 @@ The following table lists the command line arguments available for training the 
 
 Each argument is required unless a default value is specified.
 
+### Example
+```bash
+PHASEtrain -t classification -p /home/user/PHASE/demo_covid.h5ad -r /home/user/PHASE/result -e 100 -l 0.00001 -d 2
+```
+
 ***
 
 ## Reproduction
