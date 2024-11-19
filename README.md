@@ -15,11 +15,15 @@ The manuscript has been pre-printed in bioRxiv:
 ***
 
 ## Installation
+### Installing PHASE package
 PHASE is written in Python and can be installed using pip:
 
 ```bash
-pip install move-dl
+pip install phase-sc
 ```
+### Requirements
+PHASE should run on any environmnet where Python is available，utilizing PyTorch for its computational needs. The training of PHASE can be done using CPUs only or GPU acceleration. If you do not have powerful GPUs available, it is possible to run using only CPUs.
+
 ***
 
 ## The PHASE pipeline
