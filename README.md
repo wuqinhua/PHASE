@@ -19,7 +19,7 @@ PHASE is written in Python and can be installed using pip:
 
 ```bash
 pip install move-dl
-
+```
 ***
 
 ## The PHASE pipeline
