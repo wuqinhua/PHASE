@@ -66,6 +66,23 @@ pip install -r requirements.txt
      
 ***
 
+## Dataset Requirements
+
+PHASE requires single-cell expression data to be provided as an `anndata` object in the `h5ad` format. Before initiating the training process, the dataset must undergo preprocessing, which includes the following steps:
+
+1. **Extraction of highly variable genes**: Identify and retain the genes（default：5000） with the highest variability across cells.
+2. **UMAP computation**: Generate a two-dimensional representation of the data for visualization and clustering.
+3. **Cell annotation**: Annotate cell types based on the dataset, either through automated methods or manual annotation, as appropriate.
+
+To ensure compatibility, **consistent naming** must be used within the `anndata` object for the following key pieces of information:
+- **Sample IDs**: Store in `adata.obs["sample_id"]`.
+- **Phenotypes**: Store in `adata.obs["phenotype"]`.
+- **Cell types**: Store in `adata.obs["celltype"]`.
+
+For detailed instructions on preprocessing and standardizing the dataset, as well as examples, please refer to the provided notebook: `preprocess.ipynb`.
+
+***
+
 ## Usages
 
 ### Command Line Arguments
@@ -87,24 +104,6 @@ Each argument is required unless a default value is specified.
 ```bash
 PHASEtrain -t classification -p /home/user/PHASE/demo_covid.h5ad -r /home/user/PHASE/result -e 100 -l 0.00001 -d 2
 ```
-
-***
-
-## Dataset Requirements
-
-PHASE requires single-cell expression data to be provided as an `anndata` object in the `h5ad` format. Before initiating the training process, the dataset must undergo preprocessing, which includes the following steps:
-
-1. **Extraction of highly variable genes**: Identify and retain the genes（default：5000） with the highest variability across cells.
-2. **UMAP computation**: Generate a two-dimensional representation of the data for visualization and clustering.
-3. **Cell annotation**: Annotate cell types based on the dataset, either through automated methods or manual annotation, as appropriate.
-
-To ensure compatibility, **consistent naming** must be used within the `anndata` object for the following key pieces of information:
-- **Sample IDs**: Store in `adata.obs["sample_id"]`.
-- **Phenotypes**: Store in `adata.obs["phenotype"]`.
-- **Cell types**: Store in `adata.obs["celltype"]`.
-
-For detailed instructions on preprocessing and standardizing the dataset, as well as examples, please refer to the provided notebook: `preprocess.ipynb`.
-
 ***
 
 ## Reproduction
