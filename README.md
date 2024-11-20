@@ -78,7 +78,7 @@ To ensure compatibility, **consistent naming** must be used within the `anndata`
 - **Phenotypes**: Store in `adata.obs["phenotype"]`.
 - **Cell types**: Store in `adata.obs["celltype"]`.
 
-For detailed instructions on preprocessing and standardizing the dataset, as well as examples, please refer to the provided notebook: `preprocess.ipynb`.
+For detailed instructions on preprocessing and standardizing the dataset, as well as examples, please refer to the provided notebook: [preprocess_demo.ipynb](https://github.com/wuqinhua/PHASE/blob/main/Desktop/PHASE/Preprocess_demo.ipynb).
 
 ***
 
