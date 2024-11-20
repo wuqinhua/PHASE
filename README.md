@@ -94,7 +94,7 @@ PHASE requires single-cell expression data to be provided as an `anndata` object
 
 1. **Extraction of highly variable genes**: Identify and retain the genes（default：5000） with the highest variability across cells.
 2. **UMAP computation**: Generate a two-dimensional representation of the data for visualization and clustering.
-3. **Cell annotation**: Annotate cell types based on the dataset, either through automated methods or manual annotation, as appropriate..
+3. **Cell annotation**: Annotate cell types based on the dataset, either through automated methods or manual annotation, as appropriate.
 
 To ensure compatibility, **consistent naming** must be used within the `anndata` object for the following key pieces of information:
 - **Sample IDs**: Store in `adata.obs["sample_id"]`.
