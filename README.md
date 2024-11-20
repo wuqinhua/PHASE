@@ -88,6 +88,8 @@ Each argument is required unless a default value is specified.
 PHASEtrain -t classification -p /home/user/PHASE/demo_covid.h5ad -r /home/user/PHASE/result -e 100 -l 0.00001 -d 2
 ```
 
+***
+
 ## Dataset Requirements
 
 PHASE requires single-cell expression data to be provided as an `anndata` object in the `h5ad` format. Before initiating the training process, the dataset must undergo preprocessing, which includes the following steps:
