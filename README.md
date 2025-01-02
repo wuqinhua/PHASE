@@ -50,8 +50,8 @@ numpy>=1.23.5
 pandas>=1.5.3  
 scipy>=1.11.4  
 seaborn>=0.13.2  
-matplotlib==3.6.3  
-captum==0.7.0  
+matplotlib>=3.6.3  
+captum>=0.7.0  
 scikit-learn>=1.5.1  
 ```
 To install these dependencies, you can run the following command using `pip`:
